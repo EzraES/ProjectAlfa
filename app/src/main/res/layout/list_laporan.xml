@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_laporan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/laporan_saya"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_laporan"
+        android:elevation="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="4dp"
+        app:cardUseCompatPadding="true"
+        android:padding="16dp"
+        android:layout_marginTop="8dp">
+
+
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:padding="4dp">
+
+
+           <ImageView
+               android:id="@+id/img_pelanggaran"
+               android:layout_width="16dp"
+               android:layout_height="16dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:src="@tools:sample/avatars"/>
+
+           <TextView
+               android:id="@+id/tempat_jenis_pelanggaran"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toEndOf="@id/img_pelanggaran"
+               android:layout_marginStart="4dp"
+               android:textSize="12sp"
+               android:text="@string/jenis_tempat_pelanggaran"/>
+
+
+           <TextView
+               android:id="@+id/_tanggal"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/hh_bb_tt"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/tempat_jenis_pelanggaran"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <ImageView
+               android:id="@+id/img_kendaraan"
+               android:layout_width="110dp"
+               android:layout_height="110dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/img_pelanggaran"
+               tools:src="@tools:sample/avatars"
+               android:layout_marginTop="6dp"/>
+
+           <TextView
+               android:id="@+id/txt_desc_gangguan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="@string/laporan_kendaraan"
+               app:layout_constraintStart_toEndOf="@+id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/img_pelanggaran"
+               android:layout_marginStart="4dp"
+               android:textSize="14sp"
+               android:layout_marginTop="6dp"/>
+           <View
+               android:id="@+id/_garis"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               app:layout_constraintStart_toEndOf="@id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/txt_desc_gangguan"
+               android:layout_marginStart="4dp"
+               android:layout_marginTop="4dp"
+               android:background="@color/black"/>
+
+           <TextView
+               android:id="@+id/txt_kendaraan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toEndOf="@+id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/_garis"
+               android:text="@string/kendaraan"
+               android:textSize="12sp"
+               android:layout_marginStart="4dp"
+               android:layout_marginTop="4dp"/>
+
+           <TextView
+               android:id="@+id/jenis_kendaraan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="@string/jenis_mobil"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/txt_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/_garis" />
+
+           <TextView
+               android:id="@+id/txt_tipe"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toEndOf="@id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/txt_kendaraan"
+               android:text="@string/txt_tipe"
+               android:layout_marginStart="4dp"
+               android:layout_marginTop="4dp"
+               android:textSize="12sp"/>
+
+           <TextView
+               android:id="@+id/txt_desc_tipe"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="@string/txt_desc_tipe"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/txt_tipe"
+               app:layout_constraintTop_toBottomOf="@id/jenis_kendaraan" />
+
+           <TextView
+               android:id="@+id/txt_lokasi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toEndOf="@id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/txt_tipe"
+               android:text="@string/txt_lokasi"
+               android:layout_marginStart="4dp"
+               android:layout_marginTop="4dp"
+               android:textSize="12sp"/>
+
+           <TextView
+               android:id="@+id/txt_desc_lokasi"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="@string/txt_desc_lokasi"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/txt_lokasi"
+               app:layout_constraintTop_toBottomOf="@id/txt_desc_tipe"
+               app:layout_constraintVertical_weight="2"/>
+
+           <TextView
+               android:id="@+id/txt_napol"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintStart_toEndOf="@id/img_kendaraan"
+               app:layout_constraintTop_toBottomOf="@id/txt_lokasi"
+               android:text="@string/txt_napol"
+               android:layout_marginStart="4dp"
+               android:layout_marginTop="4dp"
+               android:textSize="12sp"/>
+
+           <TextView
+               android:id="@+id/txt_desc_napol"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="4dp"
+               android:text="@string/txt_desc_napol"
+               android:textSize="12sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1.0"
+               app:layout_constraintStart_toEndOf="@+id/txt_napol"
+               app:layout_constraintTop_toBottomOf="@id/txt_desc_lokasi" />
+           <View
+               android:id="@+id/_garis2"
+               android:layout_width="wrap_content"
+               android:layout_height="1dp"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@id/img_kendaraan"
+               android:background="@color/black"
+               android:layout_marginTop="6dp"/>
+           <TextView
+               android:id="@+id/txt_lihat_detail_laporan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/_garis2"
+               app:layout_constraintStart_toStartOf="parent"
+               android:text="@string/lihat_detail_laporan"
+               android:textSize="12sp"
+               android:layout_marginTop="8dp"/>
+
+           <ImageView
+               android:id="@+id/img_lihat_laporan_detail"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="1"
+               app:layout_constraintStart_toEndOf="@id/txt_lihat_detail_laporan"
+               app:layout_constraintTop_toBottomOf="@id/_garis2"
+               tools:src="@drawable/ic_baseline_arrow_right_alt_24"
+               android:layout_marginTop="4dp"/>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

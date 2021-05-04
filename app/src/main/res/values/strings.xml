@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ProjectAlfa</string>
+    <string name="laporan_saya">Laporan Saya</string>
+    <string name="informasi_kendaraan">Informasi Kendaraan</string>
+    <string name="laporan_kendaraan">Laporan Kendaraan</string>
+    <string name="kendaraan">Kendaraan : </string>
+    <string name="jenis_mobil">Jenis_Mobil</string>
+    <string name="txt_tipe">txt_tipe</string>
+    <string name="txt_desc_tipe">txt_desc_tipe</string>
+    <string name="txt_lokasi">txt_lokasi</string>
+    <string name="txt_desc_lokasi">txt_desc_lokasi</string>
+    <string name="txt_napol">txt_napol</string>
+    <string name="txt_desc_napol">txt_desc_napol</string>
+    <string name="jenis_tempat_pelanggaran">jenis_tempat_pelanggaran</string>
+    <string name="hh_bb_tt">hh/bb/tt</string>
+    <string name="lihat_detail_laporan">lihat_detail_laporan</string>
+    <string name="d_1234_dd">D 1234 DD</string>
+    <string name="nopol">Nopol:</string>
+    <string name="txt_contoh_plat">txt_contoh_plat</string>
+    <string name="merk_kendaraan">merk_kendaraan</string>
+    <string name="txt_merek_plat">txt_merek_plat</string>
+    <string name="model">Model</string>
+    <string name="txt_model_kendaraan">txt_model_kendaraan</string>
+    <string name="no_rangka">No Rangka</string>
+    <string name="txt_nomorranka_kendaraan">txt_nomorranka_kendaraan</string>
+    <string name="no_mesin">No Mesin</string>
+    <string name="txt_nomormesin_kendaraan">txt_nomormesin_kendaraan</string>
+    <string name="tag_kendaraan">Tag Kendaraan</string>
+    <string name="puji_pengendara">Puji Pengendara</string>
+</resources>
